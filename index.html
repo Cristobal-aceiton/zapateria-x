@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+    <p>Esta es una página de muestra creada por <strong>Vivandro</strong>.</p>
+
+    <a href="https://vivandro-cl.vercel.app" target="_blank" class="btn-vivandro">
+        Ir a Vivandro
+    </a>
+</nav>
+    
+    <div class="landing">
+        <img src="TITULO.png" alt="">
+    </div>
+
+    <div class="winter">
+        <img src="winter-collection.png" alt="">
+    </div>
+
+    <div class="contenedor-cards">
+
+    <div class="cards">
+        <img src="5.png" alt="">
+        <p>Adidas Campus en gris</p>
+        <h1>$76.990</h1>
+        <a href="" class="btn-comprar">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+        Comprar
+        </a>
+    </div>
+
+    <div class="cards">
+        <img src="4.png" alt="">
+        <p>Nike Air Force 1</p>
+        <h1>$89.990</h1>
+        <a href="" class="btn-comprar">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+        Comprar
+        </a>
+    </div>
+
+    <div class="cards">
+        <img src="6.png" alt="">
+        <p>Puma Suede</p>
+        <h1>$69.990</h1>
+        <a href="" class="btn-comprar">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+        Comprar
+        </a>
+    </div>
+
+    <div class="cards">
+        <img src="7.png" alt="">
+        <p>Converse Chuck 70</p>
+        <h1>$79.990</h1>
+        <a href="" class="btn-comprar">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+        Comprar
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<style>
+
+html, body { background: linear-gradient( 135deg, #1E3A8A 0%, #2563EB 50%, #3B82F6 75%, #7DD3FC 100% ); background-repeat: no-repeat; margin: 0; background-repeat: no-repeat; }
+
+.landing {
+    margin-top: 50px;
+}
+
+.landing img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.winter {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.winter img {
+    width: 1500px;
+    display: block;
+}
+
+.contenedor-cards{
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    padding-bottom: 220px; /* espacio para el banner */
+}
+
+.cards{
+    background: rgba(218, 255, 255, 0.377);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards img{
+    width: 100%;
+    max-width: 270px;
+    border-radius: 10px;
+}
+
+.cards p{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards h1{
+    font-family: Poppins;
+    color: #ffffff;
+}
+
+.btn-comprar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 80%;
+    margin: 20px auto 0;
+
+    padding: 14px;
+
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 700;
+
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.btn-comprar img{
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+}
+
+.btn-comprar:hover{
+    background: #1ebe5d;
+    transform: translateY(-3px);
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 50px;
+
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+
+    z-index: 9999;
+}
+
+.navbar p{
+    margin: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.btn-vivandro{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    color: white;
+    background: #2563EB;
+
+    padding: 12px 22px;
+    border-radius: 12px;
+
+    transition: .3s;
+}
+
+.btn-vivandro:hover{
+    background: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .landing{
+        margin-top: 30px;
+    }
+
+    .landing img{
+        width: 85%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .winter{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .winter img{
+        display: none;
+    }
+
+    .contenedor-cards{
+        width: 92%;
+        margin: 35px auto;
+        padding-bottom: 170px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cards{
+        background: rgba(218,255,255,.377);
+        border-radius: 15px;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .cards img{
+        width: 100%;
+        max-width: 220px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .cards p{
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 15px 0 10px;
+    }
+
+    .cards h1{
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .btn-comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        width: 100%;
+        margin-top: 18px;
+        padding: 14px;
+
+        background: #25D366;
+        color: white;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+
+        border-radius: 12px;
+    }
+
+    .btn-comprar img{
+        width: 22px;
+        max-width: 22px;
+        height: 22px;
+
+        margin: 0;
+        padding: 0;
+
+        flex: none;
+        display: block;
+
+        filter: invert(1);
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar p{
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .btn-vivandro{
+        width: 100%;
+        max-width: 240px;
+
+        text-align: center;
+        padding: 12px;
+
+        border-radius: 12px;
+    }
+
+}
+</style>
