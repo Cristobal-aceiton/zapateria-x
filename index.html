@@ -1,346 +1,596 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Winter Collection · Muestra Vivandro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
 
-    <nav class="navbar">
-    <p>Esta es una página de muestra creada por <strong>Vivandro</strong>.</p>
-
-    <a href="https://vivandro-cl.vercel.app" target="_blank" class="btn-vivandro">
-        Ir a Vivandro
-    </a>
-</nav>
-    
-    <div class="landing">
-        <img src="TITULO.png" alt="">
-    </div>
-
-    <div class="winter">
-        <img src="winter-collection.png" alt="">
-    </div>
-
-    <div class="contenedor-cards">
-
-    <div class="cards">
-        <img src="5.png" alt="">
-        <p>Adidas Campus en gris</p>
-        <h1>$76.990</h1>
-        <a href="" class="btn-comprar">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
-        Comprar
-        </a>
-    </div>
-
-    <div class="cards">
-        <img src="4.png" alt="">
-        <p>Nike Air Force 1</p>
-        <h1>$89.990</h1>
-        <a href="" class="btn-comprar">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
-        Comprar
-        </a>
-    </div>
-
-    <div class="cards">
-        <img src="6.png" alt="">
-        <p>Puma Suede</p>
-        <h1>$69.990</h1>
-        <a href="" class="btn-comprar">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
-        Comprar
-        </a>
-    </div>
-
-    <div class="cards">
-        <img src="7.png" alt="">
-        <p>Converse Chuck 70</p>
-        <h1>$79.990</h1>
-        <a href="" class="btn-comprar">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
-        Comprar
-        </a>
-    </div>
-
-</div>
-
-</body>
-</html>
-
-<style>
-
-html, body { background: linear-gradient( 135deg, #1E3A8A 0%, #2563EB 50%, #3B82F6 75%, #7DD3FC 100% ); background-repeat: no-repeat; margin: 0; background-repeat: no-repeat; }
-
-.landing {
-    margin-top: 50px;
-}
-
-.landing img {
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-}
-
-.winter {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-}
-
-.winter img {
-    width: 1500px;
-    display: block;
-}
-
-.contenedor-cards{
-    width: 90%;
-    max-width: 1200px;
-    margin: 60px auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
-    padding-bottom: 220px; /* espacio para el banner */
-}
-
-.cards{
-    background: rgba(218, 255, 255, 0.377);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-}
-
-.cards img{
-    width: 100%;
-    max-width: 270px;
-    border-radius: 10px;
-}
-
-.cards p{
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.cards h1{
-    font-family: Poppins;
-    color: #ffffff;
-}
-
-.btn-comprar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    width: 80%;
-    margin: 20px auto 0;
-
-    padding: 14px;
-
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    font-family: Poppins;
-    font-weight: 700;
-
-    border-radius: 12px;
-    transition: .3s;
-}
-
-.btn-comprar img{
-    width: 22px;
-    height: 22px;
-    filter: invert(1);
-}
-
-.btn-comprar:hover{
-    background: #1ebe5d;
-    transform: translateY(-3px);
-}
-
-.navbar{
-    position: sticky;
-    top: 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 50px;
-
-    background: rgba(255,255,255,.12);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    border-bottom: 1px solid rgba(255,255,255,.15);
-
-    z-index: 9999;
-}
-
-.navbar p{
-    margin: 0;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-}
-
-.btn-vivandro{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-
-    color: white;
-    background: #2563EB;
-
-    padding: 12px 22px;
-    border-radius: 12px;
-
-    transition: .3s;
-}
-
-.btn-vivandro:hover{
-    background: #1D4ED8;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-
-    *{
-        box-sizing: border-box;
+    :root {
+        --azul-noche: #0B1E3C;
+        --azul-medio: #1E3A8A;
+        --azul-electrico: #2563EB;
+        --celeste-hielo: #7DD3FC;
+        --blanco-nieve: #F5FAFF;
+        --whatsapp: #25D366;
+        --whatsapp-hover: #1ebe5d;
     }
 
-    .landing{
-        margin-top: 30px;
+    * { box-sizing: border-box; }
+
+    html, body {
+        margin: 0;
+        background:
+            radial-gradient(circle at 15% 0%, rgba(125, 211, 252, 0.25), transparent 45%),
+            linear-gradient(135deg, var(--azul-noche) 0%, var(--azul-medio) 45%, var(--azul-electrico) 75%, var(--celeste-hielo) 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Poppins", sans-serif;
+        color: var(--blanco-nieve);
+        overflow-x: hidden;
     }
 
-    .landing img{
-        width: 85%;
-        max-width: 300px;
+    /* ===== Nieve ambiente (elemento de firma) ===== */
+    .nieve {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .copo {
+        position: absolute;
+        top: -5%;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: caer linear infinite;
+    }
+
+    @keyframes caer {
+        from { transform: translateY(0) translateX(0); }
+        to   { transform: translateY(110vh) translateX(30px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .copo { animation: none; display: none; }
+    }
+
+    /* ===== Navbar ===== */
+    .navbar {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 50px;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        z-index: 9999;
+    }
+
+    .navbar p {
+        margin: 0;
+        color: var(--blanco-nieve);
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+
+    .navbar p strong {
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .btn-vivandro {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--azul-noche);
+        background: var(--blanco-nieve);
+        padding: 12px 22px;
+        border-radius: 999px;
+        transition: transform 0.25s ease, background 0.25s ease;
+        white-space: nowrap;
+    }
+
+    .btn-vivandro:hover {
+        background: #ffffff;
+        transform: translateY(-2px);
+    }
+
+    /* ===== Hero ===== */
+    .landing {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 70px 20px 10px;
+    }
+
+    .landing .eyebrow {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--celeste-hielo);
+        margin-bottom: 18px;
+    }
+
+    .landing img {
+        width: 460px;
+        max-width: 90%;
         display: block;
         margin: 0 auto;
+        filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
     }
 
-    .winter{
+    .landing .sub {
+        margin: 22px auto 0;
+        max-width: 420px;
+        font-size: 15px;
+        color: rgba(245, 250, 255, 0.75);
+        line-height: 1.6;
+    }
+
+    /* ===== Catálogo ===== */
+    .catalogo {
+        position: relative;
+        z-index: 2;
+        padding: 50px 20px 50px;
+    }
+
+    .catalogo__heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .catalogo__heading .eyebrow {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--celeste-hielo);
+        margin-bottom: 10px;
+    }
+
+    .catalogo__heading h2 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+
+    /* ===== Filtros de categoría ===== */
+    .filtros {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 26px 0 40px;
+    }
+
+    .filtro-btn {
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--blanco-nieve);
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 9px 20px;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    }
+
+    .filtro-btn:hover {
+        border-color: var(--celeste-hielo);
+    }
+
+    .filtro-btn.activo {
+        background: var(--blanco-nieve);
+        color: var(--azul-noche);
+        border-color: var(--blanco-nieve);
+    }
+
+    .contenedor-cards {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+    }
+
+    .cards {
+        position: relative;
+        background: rgba(245, 250, 255, 0.10);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 18px;
+        padding: 22px;
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, opacity 0.6s ease;
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    .cards.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .cards.oculta {
+        display: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .cards { opacity: 1; transform: none; transition: none; }
+    }
+
+    .cards:hover {
+        transform: translateY(-8px);
+        border-color: var(--celeste-hielo);
+        background: rgba(245, 250, 255, 0.16);
+    }
+
+    .cards .imagen-wrap {
+        border-radius: 12px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.06);
+        margin-bottom: 18px;
+    }
+
+    .cards img.foto {
+        width: 100%;
+        display: block;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .cards:hover img.foto {
+        transform: scale(1.06);
+    }
+
+    .cards p {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 0 6px;
+        color: var(--blanco-nieve);
+    }
+
+    .cards h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        color: #ffffff;
+        margin: 0 0 18px;
+        letter-spacing: 0.3px;
+    }
+
+    .btn-comprar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 13px;
+        background: var(--whatsapp);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 12px;
+        transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .btn-comprar img {
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
+    }
+
+    .btn-comprar:hover {
+        background: var(--whatsapp-hover);
+        transform: translateY(-3px);
+    }
+
+    /* ===== Banner decorativo inferior ===== */
+    .winter {
         position: fixed;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 100%;
         z-index: 1000;
+        pointer-events: none;
     }
 
-    .winter img{
-        display: none;
-    }
-
-    .contenedor-cards{
-        width: 92%;
-        margin: 35px auto;
-        padding-bottom: 170px;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .cards{
-        background: rgba(218,255,255,.377);
-        border-radius: 15px;
-        padding: 18px;
-        text-align: center;
-    }
-
-    .cards img{
-        width: 100%;
-        max-width: 220px;
+    .winter img {
+        width: 1500px;
         display: block;
-        margin: 0 auto;
-        border-radius: 10px;
     }
 
-    .cards p{
-        font-family: "Poppins", sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        margin: 15px 0 10px;
+    /* ===== Footer ===== */
+    .footer {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 50px 20px 90px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(11, 30, 60, 0.35);
     }
 
-    .cards h1{
-        font-family: "Poppins", sans-serif;
-        color: white;
-        font-size: 28px;
-        margin: 0;
+    .footer__contacto {
+        font-size: 14px;
+        color: rgba(245, 250, 255, 0.85);
+        margin-bottom: 18px;
     }
 
-    .btn-comprar{
+    .footer__contacto strong {
+        color: #ffffff;
+    }
+
+    .footer__redes {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 8px;
-
-        width: 100%;
-        margin-top: 18px;
-        padding: 14px;
-
-        background: #25D366;
-        color: white;
-        text-decoration: none;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-
-        border-radius: 12px;
+        gap: 16px;
+        margin-bottom: 30px;
     }
 
-    .btn-comprar img{
-        width: 22px;
-        max-width: 22px;
-        height: 22px;
-
-        margin: 0;
-        padding: 0;
-
-        flex: none;
-        display: block;
-
-        filter: invert(1);
-    }
-
-    .navbar{
+    .footer__redes a {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 12px;
-
-        text-align: center;
-        padding: 15px;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.10);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
     }
 
-    .navbar p{
-        margin: 0;
-        font-size: 14px;
-        line-height: 1.5;
+    .footer__redes a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--celeste-hielo);
+        transform: translateY(-3px);
     }
 
-    .btn-vivandro{
-        width: 100%;
-        max-width: 240px;
-
-        text-align: center;
-        padding: 12px;
-
-        border-radius: 12px;
+    .footer__redes img {
+        width: 18px;
+        height: 18px;
+        filter: invert(1);
+        opacity: 0.9;
     }
 
-}
-</style>
+    .footer__vivandro {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding-top: 26px;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .footer__vivandro p {
+        font-size: 13px;
+        color: rgba(245, 250, 255, 0.7);
+        margin: 0 0 16px;
+        line-height: 1.6;
+    }
+
+    /* ========= MOBILE ========= */
+    @media (max-width: 768px) {
+
+        .navbar {
+            flex-direction: column;
+            gap: 12px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .navbar p { font-size: 14px; line-height: 1.5; }
+
+        .btn-vivandro {
+            width: 100%;
+            max-width: 240px;
+            text-align: center;
+        }
+
+        .landing { padding: 40px 20px 0; }
+
+        .landing img {
+            width: 85%;
+            max-width: 300px;
+        }
+
+        .catalogo {
+            padding: 35px 20px 20px;
+        }
+
+        .catalogo__heading h2 { font-size: 26px; }
+
+        .contenedor-cards {
+            width: 92%;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .cards { padding: 16px; }
+
+        .cards p { font-size: 13px; }
+
+        .cards h1 { font-size: 18px; margin-bottom: 14px; }
+
+        .btn-comprar { font-size: 13px; padding: 12px; }
+
+        .winter { width: 100%; }
+
+        .winter img { display: none; }
+
+        .filtros { margin: 20px 0 30px; }
+
+        .filtro-btn { font-size: 12px; padding: 8px 16px; }
+
+        .footer { padding: 40px 20px 50px; }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Nieve ambiente: puramente decorativa -->
+    <div class="nieve" aria-hidden="true">
+        <div class="copo" style="left:6%;  width:6px;  height:6px;  animation-duration:11s; animation-delay:0s;"></div>
+        <div class="copo" style="left:18%; width:4px;  height:4px;  animation-duration:9s;  animation-delay:2s;"></div>
+        <div class="copo" style="left:30%; width:7px;  height:7px;  animation-duration:13s; animation-delay:1s;"></div>
+        <div class="copo" style="left:42%; width:3px;  height:3px;  animation-duration:8s;  animation-delay:4s;"></div>
+        <div class="copo" style="left:55%; width:5px;  height:5px;  animation-duration:12s; animation-delay:3s;"></div>
+        <div class="copo" style="left:68%; width:4px;  height:4px;  animation-duration:10s; animation-delay:0.5s;"></div>
+        <div class="copo" style="left:80%; width:6px;  height:6px;  animation-duration:14s; animation-delay:2.5s;"></div>
+        <div class="copo" style="left:92%; width:3px;  height:3px;  animation-duration:9s;  animation-delay:1.5s;"></div>
+        <div class="copo" style="left:24%; width:5px;  height:5px;  animation-duration:15s; animation-delay:5s;"></div>
+        <div class="copo" style="left:76%; width:5px;  height:5px;  animation-duration:11s; animation-delay:6s;"></div>
+    </div>
+
+    <nav class="navbar">
+        <p>Esta es una página de muestra creada por <strong>Vivandro</strong>.</p>
+        <a href="https://vivandro-cl.vercel.app" target="_blank" class="btn-vivandro">
+            Ir a Vivandro
+        </a>
+    </nav>
+
+    <div class="landing">
+        <span class="eyebrow">Colección invierno</span>
+        <img src="TITULO.png" alt="Winter Collection">
+        <p class="sub">Zapatillas seleccionadas para el frío. Elige tu par y cierra la compra directo por WhatsApp.</p>
+    </div>
+
+    <section class="catalogo" id="catalogo">
+        <div class="catalogo__heading">
+            <span class="eyebrow">Catálogo</span>
+            <h2>Elige tu par</h2>
+        </div>
+
+        <div class="filtros">
+            <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+            <button class="filtro-btn" data-filtro="casual">Casual</button>
+            <button class="filtro-btn" data-filtro="retro">Retro</button>
+            <button class="filtro-btn" data-filtro="skate">Skate</button>
+        </div>
+
+        <div class="contenedor-cards">
+
+            <div class="cards" data-categoria="casual">
+                <div class="imagen-wrap">
+                    <img class="foto" src="5.png" alt="Adidas Campus en gris">
+                </div>
+                <p>Adidas Campus en gris</p>
+                <h1>$76.990</h1>
+                <a href="" class="btn-comprar">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+                    Comprar
+                </a>
+            </div>
+
+            <div class="cards" data-categoria="casual">
+                <div class="imagen-wrap">
+                    <img class="foto" src="4.png" alt="Nike Air Force 1">
+                </div>
+                <p>Nike Air Force 1</p>
+                <h1>$89.990</h1>
+                <a href="" class="btn-comprar">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+                    Comprar
+                </a>
+            </div>
+
+            <div class="cards" data-categoria="skate">
+                <div class="imagen-wrap">
+                    <img class="foto" src="6.png" alt="Puma Suede">
+                </div>
+                <p>Puma Suede</p>
+                <h1>$69.990</h1>
+                <a href="" class="btn-comprar">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+                    Comprar
+                </a>
+            </div>
+
+            <div class="cards" data-categoria="retro">
+                <div class="imagen-wrap">
+                    <img class="foto" src="7.png" alt="Converse Chuck 70">
+                </div>
+                <p>Converse Chuck 70</p>
+                <h1>$79.990</h1>
+                <a href="" class="btn-comprar">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+                    Comprar
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__contacto">¿Dudas con tu talla o el despacho? Escríbenos: <strong>+56 9 0000 0000</strong> · <strong>contacto@tutienda.cl</strong></p>
+
+        <div class="footer__redes">
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="">
+            </a>
+            <a href="#" target="_blank" aria-label="TikTok">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="">
+            </a>
+            <a href="#" target="_blank" aria-label="WhatsApp">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+            </a>
+        </div>
+
+        <div class="footer__vivandro">
+            <p>Esta tienda de muestra fue creada por Vivandro para mostrar cómo se ve un catálogo con botón de compra a WhatsApp.</p>
+            <a href="https://vivandro-cl.vercel.app" target="_blank" class="btn-vivandro">
+                Ir a Vivandro
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Filtro de categorías
+        const botones = document.querySelectorAll('.filtro-btn');
+        const tarjetas = document.querySelectorAll('.cards');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                botones.forEach(b => b.classList.remove('activo'));
+                boton.classList.add('activo');
+
+                const filtro = boton.dataset.filtro;
+
+                tarjetas.forEach(card => {
+                    const coincide = filtro === 'todos' || card.dataset.categoria === filtro;
+                    card.classList.toggle('oculta', !coincide);
+                });
+            });
+        });
+
+        // Animación al hacer scroll
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach(entrada => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('visible');
+                    observador.unobserve(entrada.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        tarjetas.forEach(card => observador.observe(card));
+    </script>
+
+</body>
+</html>
